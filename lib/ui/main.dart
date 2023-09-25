@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:trendy_threads/ui/categories_list_page.dart';
-import 'package:trendy_threads/ui/home_page.dart';
-import 'package:trendy_threads/ui/product_listing.dart';
 import 'package:trendy_threads/ui/widgets/custom_bottom_bar.dart';
 
 void main() {

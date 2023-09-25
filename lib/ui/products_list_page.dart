@@ -5,49 +5,49 @@ import 'package:trendy_threads/ui/widgets/categories_list_view.dart';
 import 'package:trendy_threads/ui/widgets/custom_app_bar.dart';
 import 'package:trendy_threads/ui/widgets/products_grid_view.dart';
 
-class ProductListing extends StatefulWidget {
-  const ProductListing({Key? key}) : super(key: key);
+class ProductsListPage extends StatefulWidget {
+  const ProductsListPage({Key? key}) : super(key: key);
 
   @override
-  State<ProductListing> createState() => _ProductListingState();
+  State<ProductsListPage> createState() => _ProductsListPageState();
 }
 
-class _ProductListingState extends State<ProductListing> {
+class _ProductsListPageState extends State<ProductsListPage> {
   final List<Categories> femaleCategoriesList = [
     Categories(
       name: "All",
       imagePath: 'assets/images/category all 1.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Bags",
       imagePath: 'assets/images/category w 1.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Dress",
       imagePath: 'assets/images/category w 2.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Footwear",
       imagePath: 'assets/images/category w 3.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Bottoms",
       imagePath: 'assets/images/category w 4.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Tops",
       imagePath: 'assets/images/category w 5.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Accessories",
       imagePath: 'assets/images/category w 6.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
   ];
 

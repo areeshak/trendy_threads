@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trendy_threads/domain/entities/categories.dart';
-import 'package:trendy_threads/ui/product_listing.dart';
+import 'package:trendy_threads/ui/products_list_page.dart';
 import 'package:trendy_threads/ui/widgets/categories_grid_view.dart';
 import 'package:trendy_threads/ui/widgets/custom_app_bar.dart';
 import 'package:trendy_threads/utils/heading_text.dart';
@@ -18,37 +18,37 @@ class _CategoriesListPageState extends State<CategoriesListPage> {
     Categories(
       name: "All",
       imagePath: 'assets/images/category all 1.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Bags",
       imagePath: 'assets/images/category w 1.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Dress",
       imagePath: 'assets/images/category w 2.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Footwear",
       imagePath: 'assets/images/category w 3.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Bottoms",
       imagePath: 'assets/images/category w 4.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Tops",
       imagePath: 'assets/images/category w 5.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Accessories",
       imagePath: 'assets/images/category w 6.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
   ];
 
@@ -56,32 +56,32 @@ class _CategoriesListPageState extends State<CategoriesListPage> {
     Categories(
       name: "All",
       imagePath: 'assets/images/category m all.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Shirt",
       imagePath: 'assets/images/category m 1.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Bottom",
       imagePath: 'assets/images/category m 2.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Footwear",
       imagePath: 'assets/images/category m 3.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Jackets",
       imagePath: 'assets/images/category m 4.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Accessories",
       imagePath: 'assets/images/category m 5.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
   ];
 

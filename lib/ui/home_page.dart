@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trendy_threads/domain/entities/categories.dart';
 import 'package:trendy_threads/domain/entities/product.dart';
-import 'package:trendy_threads/ui/product_listing.dart';
+import 'package:trendy_threads/ui/products_list_page.dart';
 import 'package:trendy_threads/ui/widgets/categories_grid_view.dart';
 import 'package:trendy_threads/ui/widgets/custom_app_bar.dart';
 import 'package:trendy_threads/ui/widgets/custom_carousel_slider.dart';
@@ -22,32 +22,32 @@ class _HomePageState extends State<HomePage> {
     Categories(
       name: "Women's Bags",
       imagePath: 'assets/images/category w 1.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Men's Shirt",
       imagePath: 'assets/images/category m 1.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Women's Footwear",
       imagePath: 'assets/images/category w 3.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Men's Footwear",
       imagePath: 'assets/images/category m 3.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Women's Tops",
       imagePath: 'assets/images/category w 5.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
     Categories(
       name: "Women's Accessories",
       imagePath: 'assets/images/category w 6.jpg',
-      destinationPage: const ProductListing(),
+      destinationPage: const ProductsListPage(),
     ),
   ];
 
@@ -116,12 +116,12 @@ class _HomePageState extends State<HomePage> {
                   IdentityCard(
                     title: 'Female',
                     imagePath: 'assets/images/Female Outline.png',
-                    destinationPage: ProductListing(),
+                    destinationPage: ProductsListPage(),
                   ),
                   IdentityCard(
                     title: 'Male',
                     imagePath: 'assets/images/Male Outline.png',
-                    destinationPage: ProductListing(),
+                    destinationPage: ProductsListPage(),
                   ),
                 ],
               ),
