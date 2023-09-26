@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
       title: "Women's Bag",
       description: 'Leather Strap Bag',
       price: 4500,
-      imagePath: 'assets/images/hot pick 1.jpg',
+      imagePath: ['assets/images/hot pick 1.jpg'],
       quantity: 100,
     ),
     Product(
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
       title: "Women's Dress",
       description: 'Long Floral Dress',
       price: 5650,
-      imagePath: 'assets/images/hot pick 2.jpg',
+      imagePath: ['assets/images/hot pick 2.jpg'],
       quantity: 50,
     ),
     Product(
@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
       title: "Men's Shirt",
       description: 'White Formal Shirt',
       price: 3400,
-      imagePath: 'assets/images/hot pick 3.jpg',
+      imagePath: ['assets/images/hot pick 3.jpg'],
       quantity: 10,
     ),
     Product(
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
       title: "Women's Footwear",
       description: 'Beige High-heels',
       price: 8000,
-      imagePath: 'assets/images/hot pick 4.jpg',
+      imagePath: ['assets/images/hot pick 4.jpg'],
       quantity: 24,
     ),
   ];

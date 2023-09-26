@@ -48,7 +48,7 @@ class _ProductsGridViewState extends State<ProductsGridView> {
                   height: 85,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage(product.imagePath),
+                      image: AssetImage(product.imagePath[0]),
                       fit: BoxFit.cover,
                     ),
                     shape: BoxShape.rectangle,

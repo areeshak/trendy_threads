@@ -5,7 +5,7 @@ class Product {
   double price;
   double salePct;
   int quantity;
-  String imagePath;
+  List<String> imagePath;
 
   Product(
       {required this.category,

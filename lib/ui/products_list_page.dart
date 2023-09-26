@@ -58,7 +58,7 @@ class _ProductsListPageState extends State<ProductsListPage> {
       description: "Product description 1",
       price: 4500,
       quantity: 1,
-      imagePath: 'assets/images/hot pick 1.jpg',
+      imagePath: ['assets/images/hot pick 1.jpg'],
     ),
     Product(
       category: "Dress",
@@ -67,7 +67,7 @@ class _ProductsListPageState extends State<ProductsListPage> {
       price: 5650,
       salePct: 20.0,
       quantity: 1,
-      imagePath: 'assets/images/hot pick 2.jpg',
+      imagePath: ['assets/images/hot pick 2.jpg'],
     ),
     Product(
       category: "Footwear",
@@ -75,7 +75,7 @@ class _ProductsListPageState extends State<ProductsListPage> {
       description: "Product description 3",
       price: 8000,
       quantity: 1,
-      imagePath: 'assets/images/hot pick 4.jpg',
+      imagePath: ['assets/images/hot pick 4.jpg'],
     ),
     Product(
       category: "Accessories",
@@ -83,7 +83,7 @@ class _ProductsListPageState extends State<ProductsListPage> {
       description: "Product description 4",
       price: 55500,
       quantity: 1,
-      imagePath: 'assets/images/product 1.jpg',
+      imagePath: ['assets/images/product 1.jpg'],
     ),
     Product(
       category: "Accessories",
@@ -91,7 +91,7 @@ class _ProductsListPageState extends State<ProductsListPage> {
       description: "Product description 5",
       price: 75650,
       quantity: 1,
-      imagePath: 'assets/images/product 2.jpg',
+      imagePath: ['assets/images/product 2.jpg'],
     ),
     Product(
       category: "Tops",
@@ -100,7 +100,7 @@ class _ProductsListPageState extends State<ProductsListPage> {
       price: 7110,
       salePct: 10.0,
       quantity: 1,
-      imagePath: 'assets/images/product 3.jpg',
+      imagePath: ['assets/images/product 3.jpg'],
     ),
     Product(
       category: "Footwear",
@@ -108,7 +108,7 @@ class _ProductsListPageState extends State<ProductsListPage> {
       description: "Product description 7",
       price: 2300,
       quantity: 1,
-      imagePath: 'assets/images/product 4.jpg',
+      imagePath: ['assets/images/product 4.jpg'],
     ),
     Product(
       category: "Bottoms",
@@ -116,7 +116,7 @@ class _ProductsListPageState extends State<ProductsListPage> {
       description: "Product description 8",
       price: 4500,
       quantity: 1,
-      imagePath: 'assets/images/product 5.jpg',
+      imagePath: ['assets/images/product 5.jpg'],
     ),
   ];
 
