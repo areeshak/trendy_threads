@@ -53,70 +53,168 @@ class _ProductsListPageState extends State<ProductsListPage> {
 
   List<Product> femaleProductsList = [
     Product(
-      category: "Bag",
-      title: "Leather Strap Bag",
-      description: "Product description 1",
+      category: "Women's Bag",
+      title: 'Leather Strap Bag',
+      description: '''
+      - Stylish and versatile leather strap bag
+      - Rich combination of brown and orange hues
+      ''',
       price: 4500,
-      quantity: 1,
       imagePath: ['assets/images/hot pick 1.jpg'],
+      quantity: 10,
+      availableColors: [
+        Colors.deepOrange,
+      ],
     ),
     Product(
-      category: "Dress",
-      title: "Long Floral Dress",
-      description: "Product description 2",
+      category: "Women's Dress",
+      title: 'Long Floral Dress',
+      description: '''
+      - Exquisite brownish floral print
+      - Premium, breathable fabric
+      - Unparalleled comfort and style
+      - Perfect for any occasion
+      - Elevate your wardrobe with this elegant piece
+      ''',
       price: 5650,
-      salePct: 20.0,
-      quantity: 1,
+      salePct: 20,
       imagePath: ['assets/images/hot pick 2.jpg'],
+      quantity: 5,
+      availableColors: [
+        Colors.brown,
+        Colors.blueGrey,
+      ],
+      availableSizes: [
+        'XS',
+        'S',
+        'M',
+        'L',
+        'XL',
+      ],
     ),
     Product(
-      category: "Footwear",
-      title: "Beige High Heels",
-      description: "Product description 3",
+      category: "Women's Footwear",
+      title: 'Beige High-heels',
+      description: '''
+      - Beige high heels for the modern woman
+      - Features a sleek stiletto heel for added elegance
+      - Built with a comfortable platform for stability
+      ''',
       price: 8000,
-      quantity: 1,
       imagePath: ['assets/images/hot pick 4.jpg'],
+      quantity: 24,
+      availableColors: [
+        const Color(0xFFB2A587),
+      ],
+      availableSizes: [
+        '35',
+        '37',
+        '38',
+        '39',
+        '40',
+        '41',
+      ],
     ),
     Product(
       category: "Accessories",
       title: "Silver Gold Plated Ring",
-      description: "Product description 4",
+      description: '''
+      - Stunning silver gold plated ring
+      - Crafted with precision and care
+      - Adds a touch of elegance to any outfit
+      - Limited edition piece
+      ''',
       price: 55500,
-      quantity: 1,
+      quantity: 8,
       imagePath: ['assets/images/product 1.jpg'],
+      availableSizes: [
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+      ],
     ),
     Product(
       category: "Accessories",
       title: "Silver-color Pendant",
-      description: "Product description 5",
+      description: '''
+      - Exquisite silver-color pendant
+      - Intricate design for a sophisticated look
+      - Ideal for special occasions
+      - Limited stock available
+      ''',
       price: 75650,
-      quantity: 1,
+      quantity: 30,
       imagePath: ['assets/images/product 2.jpg'],
     ),
     Product(
       category: "Tops",
       title: "Black Stone Top",
-      description: "Product description 6",
+      description: '''
+      - Stylish black stone top
+      - Features a unique stone embellishment
+      - Comfortable and trendy
+      ''',
       price: 7110,
       salePct: 10.0,
-      quantity: 1,
+      quantity: 10,
       imagePath: ['assets/images/product 3.jpg'],
+      availableColors: [
+        Colors.black,
+      ],
+      availableSizes: [
+        'XS',
+        'S',
+        'M',
+        'L',
+      ],
     ),
     Product(
       category: "Footwear",
-      title: "Black Strap Sliders",
-      description: "Product description 7",
+      title: "Strap Sliders",
+      description: '''
+      - Casual black strap sliders
+      - Perfect for everyday wear
+      - Slip-on convenience
+      - Affordable and fashionable
+      ''',
       price: 2300,
-      quantity: 1,
+      quantity: 50,
       imagePath: ['assets/images/product 4.jpg'],
+      availableColors: [
+        Colors.black,
+        const Color(0xff0B1D3F),
+      ],
+      availableSizes: [
+        '35',
+        '37',
+        '38',
+        '39',
+        '40',
+        '41',
+      ],
     ),
     Product(
       category: "Bottoms",
-      title: "Light blue Jeans",
-      description: "Product description 8",
+      title: "Blue Jeans",
+      description: '''
+      - Classic light blue jeans
+      - Comfortable fit for all-day wear
+      ''',
       price: 4500,
       quantity: 1,
       imagePath: ['assets/images/product 5.jpg'],
+      availableColors: [
+        Colors.lightBlue,
+        const Color(0xff0B1D3F),
+      ],
+      availableSizes: [
+        '28',
+        '30',
+        '32',
+        '34',
+      ],
     ),
   ];
 

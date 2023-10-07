@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trendy_threads/domain/entities/product.dart';
+import 'package:trendy_threads/ui/product_details_page.dart';
 
 class ProductListView extends StatelessWidget {
   final List<Product> productsList;
@@ -19,7 +20,11 @@ class ProductListView extends StatelessWidget {
             padding: const EdgeInsets.only(right: 14.0),
             child: GestureDetector(
               onTap: () {
-                // Handle onTap event for the product
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => ProductDetailsPage(product: product),
+                  ),
+                );
               },
               child: Container(
                 width: 160,
@@ -49,7 +54,7 @@ class ProductListView extends StatelessWidget {
                         child: RichText(
                           text: TextSpan(children: [
                             TextSpan(
-                              text: product.title,
+                              text: product.category,
                               style: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   color: Colors.black.withOpacity(0.7),
@@ -58,7 +63,7 @@ class ProductListView extends StatelessWidget {
                             ),
                             const TextSpan(text: '\n'),
                             TextSpan(
-                              text: product.description,
+                              text: product.title,
                               style: const TextStyle(
                                   fontWeight: FontWeight.w500,
                                   color: Colors.black,

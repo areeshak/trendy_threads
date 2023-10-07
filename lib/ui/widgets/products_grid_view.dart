@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trendy_threads/domain/entities/product.dart';
+import 'package:trendy_threads/ui/product_details_page.dart';
 import 'package:trendy_threads/utils/discounted_price.dart';
 
 class ProductsGridView extends StatefulWidget {
@@ -35,7 +36,13 @@ class _ProductsGridViewState extends State<ProductsGridView> {
       itemBuilder: (BuildContext context, int index) {
         final product = widget.productsList[index];
         return GestureDetector(
-          onTap: () {},
+          onTap: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => ProductDetailsPage(product: product),
+              ),
+            );
+          },
           child: Container(
             width: 160,
             decoration: BoxDecoration(

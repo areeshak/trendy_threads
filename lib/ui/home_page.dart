@@ -51,42 +51,91 @@ class _HomePageState extends State<HomePage> {
     ),
   ];
 
-
   final List<Product> productsList = [
     Product(
-      category: "Category 1",
-      title: "Women's Bag",
-      description: 'Leather Strap Bag',
+      category: "Women's Bag",
+      title: 'Leather Strap Bag',
+      description: '''
+      - Stylish and versatile leather strap bag
+      - Rich combination of brown and orange hues
+      ''',
       price: 4500,
       imagePath: ['assets/images/hot pick 1.jpg'],
-      quantity: 100,
+      quantity: 10,
+      availableColors: [
+        Colors.deepOrange,
+      ],
     ),
     Product(
-      category: "Category 2",
-      title: "Women's Dress",
-      description: 'Long Floral Dress',
+      category: "Women's Dress",
+      title: 'Long Floral Dress',
+      description: '''
+      - Exquisite brownish floral print
+      - Premium, breathable fabric
+      - Unparalleled comfort and style
+      - Perfect for any occasion
+      - Elevate your wardrobe with this elegant piece
+      ''',
       price: 5650,
+      salePct: 20,
       imagePath: ['assets/images/hot pick 2.jpg'],
-      quantity: 50,
+      quantity: 5,
+      availableColors: [
+        Colors.brown,
+        Colors.blueGrey,
+      ],
+      availableSizes: [
+        'XS',
+        'S',
+        'M',
+        'L',
+        'XL',
+      ],
     ),
     Product(
-      category: "Category 3",
-      title: "Men's Shirt",
-      description: 'White Formal Shirt',
+      category: "Men's Shirt",
+      title: 'White Formal Shirt',
+      description: '''
+      - Classic white formal shirt for men
+      ''',
       price: 3400,
       imagePath: ['assets/images/hot pick 3.jpg'],
       quantity: 10,
+      availableColors: [
+        Colors.white,
+      ],
+      availableSizes: [
+        'XS',
+        'S',
+        'M',
+        'L',
+        'XL',
+      ],
     ),
     Product(
-      category: "Category 4",
-      title: "Women's Footwear",
-      description: 'Beige High-heels',
+      category: "Women's Footwear",
+      title: 'Beige High-heels',
+      description: '''
+      - Beige high heels for the modern woman
+      - Features a sleek stiletto heel for added elegance
+      - Built with a comfortable platform for stability
+      ''',
       price: 8000,
       imagePath: ['assets/images/hot pick 4.jpg'],
       quantity: 24,
+      availableColors: [
+        const Color(0xFFB2A587),
+      ],
+      availableSizes: [
+        '35',
+        '37',
+        '38',
+        '39',
+        '40',
+        '41',
+      ],
     ),
   ];
-
 
   @override
   Widget build(BuildContext context) {
@@ -134,7 +183,11 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(
                 height: 270,
-                child: CategoriesGridView(categoriesList: categoriesList, itemsPerRow: 3, spacingX: 10, spacingY: 20),
+                child: CategoriesGridView(
+                    categoriesList: categoriesList,
+                    itemsPerRow: 3,
+                    spacingX: 10,
+                    spacingY: 20),
               ),
               const Padding(
                 padding: EdgeInsets.only(top: 30, bottom: 20),
